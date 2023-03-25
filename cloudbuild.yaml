@@ -4,11 +4,11 @@ steps:
   args: [
     'build',
     '--frontend=dockerfile.v1',
-    '--progress=plain',
+    # '--progress=plain',
     '--output=type=image,name=gcr.io/$PROJECT_ID/minecraft-server,push=true',
     '.'
   ]
-  # env: [
-  #   'BUILDKITD_FLAGS=--oci-worker-platform=linux/amd64',
-  # ]
+  env: [
+    'BUILDKITD_FLAGS=--oci-worker-platform=linux/amd64',
+  ]
 images: ['gcr.io/$PROJECT_ID/minecraft-server']
