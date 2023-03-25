@@ -1,4 +1,4 @@
-# syntax = docker/dockerfile:1.3
+# syntax=docker/dockerfile:1.3
 
 ARG BASE_IMAGE=eclipse-temurin:17-jre-focal
 FROM ${BASE_IMAGE}
