@@ -1,0 +1,14 @@
+steps:
+- name: 'docker.io/moby/buildkit:v0.9.0'
+  id: 'build'
+  args: [
+    'build',
+    '--frontend=dockerfile.v0',
+    '--progress=plain',
+    '--output=type=image,name=gcr.io/$PROJECT_ID/my-image,push=true',
+    '.'
+  ]
+  env: [
+    'BUILDKITD_FLAGS=--oci-worker-platform=linux/amd64',
+  ]
+images: ['gcr.io/$PROJECT_ID/my-image']
