@@ -6,9 +6,6 @@ options:
 steps:
 - name: 'docker.io/moby/buildkit:v0.9.0'
   id: 'buildkit'
-  volumes:
-  - name: 'buildkit-cache'
-    path: '/var/lib/buildkit'
   entrypoint: 'buildctl-daemonless.sh'
   args:
     - 'build'
