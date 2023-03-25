@@ -5,10 +5,10 @@ steps:
     'build',
     '--frontend=dockerfile.v1',
     '--progress=plain',
-    '--output=type=image,name=gcr.io/$PROJECT_ID/my-image,push=true',
+    '--output=type=image,name=gcr.io/$PROJECT_ID/minecraft-server,push=true',
     '.'
   ]
-  env: [
-    'BUILDKITD_FLAGS=--oci-worker-platform=linux/amd64',
-  ]
-images: ['gcr.io/$PROJECT_ID/my-image']
+  # env: [
+  #   'BUILDKITD_FLAGS=--oci-worker-platform=linux/amd64',
+  # ]
+images: ['gcr.io/$PROJECT_ID/minecraft-server']
