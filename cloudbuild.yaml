@@ -3,8 +3,8 @@ steps:
   id: 'build'
   args: [
     'build',
-    '--frontend=dockerfile.v1',
-    # '--progress=plain',
+    '--file=dockerfile.v1',
+    '--progress=plain',
     '--output=type=image,name=gcr.io/$PROJECT_ID/minecraft-server,push=true',
     '.'
   ]
