@@ -13,6 +13,7 @@ steps:
     - '--local=context=.'
     - '--local=dockerfile=.'
     - '--output=type=image,name=gcr.io/$PROJECT_ID/minecraft-server,push=true'
+    - '--verbosity=info'
   env:
     - 'BUILDKITD_FLAGS=--oci-worker-platform=linux/amd64'
 
