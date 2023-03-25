@@ -3,7 +3,7 @@ steps:
   id: 'build'
   args: [
     'build',
-    '--frontend=dockerfile.v0',
+    '--frontend=dockerfile.v1',
     '--progress=plain',
     '--output=type=image,name=gcr.io/$PROJECT_ID/my-image,push=true',
     '.'
