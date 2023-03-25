@@ -1,8 +1,5 @@
 timeout: 1800s
 
-options:
-  machineType: 'E2_HIGHCPU_4'
-
 steps:
 - name: 'docker.io/moby/buildkit:v0.9.0'
   id: 'buildkit'
