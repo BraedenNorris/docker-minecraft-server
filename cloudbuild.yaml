@@ -16,7 +16,7 @@ steps:
   env:
     - 'BUILDKITD_FLAGS=--oci-worker-platform=linux/amd64'
 
-- name: 'gcr.io/cloud-builders/docker'
+- name: 'us-central1-docker.pkg.dev'
   id: 'sleep'
   entrypoint: 'sh'
   args:
