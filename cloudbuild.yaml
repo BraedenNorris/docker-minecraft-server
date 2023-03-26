@@ -16,11 +16,4 @@ steps:
   env:
     - 'BUILDKITD_FLAGS=--oci-worker-platform=linux/amd64'
 
-- name: 'us-central1-docker.pkg.dev'
-  id: 'sleep'
-  entrypoint: 'sh'
-  args:
-    - '-c'
-    - 'sleep 10'
-
-images: ['us-central1-docker.pkg.dev/$PROJECT_ID/minecraft-server/docker-minecraft-server']
+# images: ['us-central1-docker.pkg.dev/$PROJECT_ID/minecraft-server/docker-minecraft-server']
