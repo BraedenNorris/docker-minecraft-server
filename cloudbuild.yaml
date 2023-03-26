@@ -12,8 +12,8 @@ steps:
     - '--progress=plain'
     - '--local=context=.'
     - '--local=dockerfile=.'
-    - '--output=type=image,name=us-central1-docker.pkg.dev/$PROJECT_ID/minecraft-server,push=true'
+    - '--output=type=image,name=us-central1-docker.pkg.dev/$PROJECT_ID/minecraft-server/docker-minecraft-server,push=true'
   env:
     - 'BUILDKITD_FLAGS=--oci-worker-platform=linux/amd64'
 
-images: ['us-central1-docker.pkg.dev/$PROJECT_ID/minecraft-server']
+images: ['us-central1-docker.pkg.dev/$PROJECT_ID/minecraft-server/docker-minecraft-server']
